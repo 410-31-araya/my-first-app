@@ -10,12 +10,12 @@ height_cm = st.number_input("กรอกสวนสูงของคุณ (�
 
 #ส่วนที่ 3 สร้างปุ่มคดคำนวณ
 if st.button("คำนวณค่า BMI 💪") :
-# แปลงส่วนสูงจาก cm เป็น เมตร แล้วคำนวณ BMI
-height_m = height_cm / 100
-bmi = weight / (height_m ** 2)
+    # แปลงส่วนสูงจาก cm เป็น เมตร แล้วคำนวณ BMI
+    height_m = height_cm / 100
+    bmi = weight / (height_m ** 2)
 
-st.write("---")
-st.header (f"ค่า BMI ของคุณคือ: **[bmi: .2f}**")
+    st.write("---")
+    st.header (f"ค่า BMI ของคุณคือ: **[bmi: .2f}**")
 
 #ส่วนที่ 4 แปลผลค่า BMI ตามเกณฑ์
 if bmi < 18.5:
