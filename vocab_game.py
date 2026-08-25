@@ -185,3 +185,4 @@ if "start" in st.session_state and not st.session_state.get("is_ended", False):
     else:
         st.session_state.is_ended = True
         st.rerun()
+        st.write("นางสาวอารยา แสนหล้า เลขที่ 31 ม.4/10")
